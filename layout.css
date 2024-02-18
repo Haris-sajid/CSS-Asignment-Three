@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1440px;
+  overflow: hidden;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  position: sticky;
+  left: 0;
+}
+
+.logo h1 {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #1a37a7;
+  line-height: 50px;
+  /* width: 180px;
+  height: 90px; */
+  letter-spacing: 5px;
+}
+.search {
+  width: 330px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  margin-right: 470px;
+  border: 1px solid lightgray;
+}
+.search-new{
+  width: 330px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid lightgray;
+  display: none;
+  margin: 0 auto;
+  
+
+}
+.search-btn {
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 40px;
+}
+.search-btn-sec{
+  width: 100%;
+  height: 50px;
+  /* display: none; */
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul li {
+  font-size: 21px;
+  margin-left: 20px;
+}
+.round {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.Profile-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1215px) {
+  .round {
+    display: none;
+  }
+  .search {
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .search {
+    display: none;
+  }
+  .Profile-image img {
+    width: 60px;
+    height: 60px;
+  }
+  .logo h1 {
+    font-size: xx-large;
+  }
+  .search-new{
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+}
+.hero-sec {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+.image-o {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+}
+.image-o img {
+  width: 600px;
+  height: 338px;
+}
+@media only screen and (max-width: 1214px) {
+  .image-o img {
+    width: 530px;
+    height: 338px;
+  }
+}
+@media only screen and (max-width: 1079px) {
+  .image-o img {
+    width: 490px;
+    height: 338px;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .hero-sec {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .image-o {
+    width: 100%;
+    height: auto;
+  }
+  .image-o img {
+    width: 650px;
+    height: 338px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .image-o img {
+    width: 500px;
+    height: 318px;
+  }
+}
+@media only screen and (max-width: 499px) {
+  .image-o img {
+    width: 400px;
+    height: 318px;
+  }
+}
+.sort-sec-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 63%;
+  margin-bottom: 10px;
+}
+.head-one {
+  margin-left: 10px;
+}
+.sort-sec {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.Up {
+  display: flex;
+  width: 600px;
+  height: auto;
+  justify-content: space-around;
+}
+.Up p {
+  opacity: 0.6;
+  margin-top: 5px;
+}
+.sort {
+  font-size: 30px;
+  color: blue;
+}
+@media only screen and (max-width: 993px) {
+  .sort-sec {
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 150px;
+  }
+  .sort-sec-heading {
+    position: relative;
+    width: 100%;
+    height: 100px;
+  }
+
+  .head-one {
+    position: absolute;
+    top: 110%;
+    left: 3%;
+    margin-left: 0px;
+  }
+  .head-two {
+    position: absolute;
+    top: 183%;
+    left: 3%;
+  }
+}
+@media only screen and (max-width: 833px) {
+  .sort-sec-heading {
+    font-size: 12px;
+  }
+  .head-one {
+    top: 80%;
+    left: 0%;
+  }
+
+  .head-two {
+    top: 180%;
+    left: 0%;
+  }
+  .Up {
+    font-size: 12px;
+  }
+  .sort {
+    display: flex;
+    justify-content: center;
+  }
+}
+.card-sec {
+  width: 100%;
+  height: 60px;
+  opacity: 0.6;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.card-one {
+  width: 300px;
+  height: 260px;
+  padding: 15px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-image {
+  width: 100%;
+  height: 78px;
+  margin-top: 40px;
+}
+.card-image img {
+  width: 250px;
+  height: 77.4px;
+}
+.icon {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  opacity: 0.6;
+}
+.price-btn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+.day {
+  opacity: 0.6;
+}
+.rent-btn {
+  padding: 08px;
+  border-radius: 05px;
+  border: none;
+  outline: none;
+  background-color: rgba(53, 99, 233, 0.9);
+  color: white;
+}
+.show-btn {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.show-more {
+  padding: 12px;
+  border-radius: 05px;
+  border: none;
+  outline: none;
+  background-color: rgba(53, 99, 233, 0.9);
+  color: white;
+}
+@media only screen and (max-width: 1115px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+}
+footer {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.about ul li {
+  display: flex;
+  flex-direction: column;
+}
+.footer-link {
+  display: flex;
+  gap: 20px;
+  line-height: 40px;
+}
+.footer-link a {
+  text-decoration: none;
+  color: black;
+}
+.reserved-sec {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  font-weight: bold;
+}
+.policy {
+  display: flex;
+  gap: 30px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 490px) {
+  footer {
+    height: 630px;
+    line-height: 20px;
+  }
+  .footer-link {
+    flex-wrap: wrap;
+  }
+}
